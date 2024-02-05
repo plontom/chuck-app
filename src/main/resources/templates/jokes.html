@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Jokes!</h1>
+    <div>
+        <form action="/jokes" method="post">
+            <div th:text="${joke}"></div>
+            <button type="submit">Random Joke</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
